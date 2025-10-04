@@ -12,7 +12,13 @@
 # db/seeds.rb
 
 Plant.delete_all
+User.delete_all
 
+User.create([
+	{ username: "Adele"},
+	{ username: "Amelia"},
+])
+ 
 Plant.create([
 	{ name: "Spider Plant", brightness: 2, watering: 0, toxic: false},
 	{ name: "Azaleas", brightness: 2, watering: 0, toxic: true},
