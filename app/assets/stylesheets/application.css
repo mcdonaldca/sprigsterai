@@ -43,8 +43,18 @@ body {
   width: 100%;
 }
 
+h1 {
+  font-family: 'Petrona', serif;
+  font-weight: 800;
+  text-transform: lowercase;
+}
+
 a {
   text-decoration: none;
+}
+
+input[type="submit" i] {
+  border: none;
 }
 
 .button {
@@ -102,4 +112,20 @@ a {
 
 #sprigster-landing .get-started {
   margin-top: 20px;
+}
+
+
+
+
+
+/* USER VIEWS */
+
+#sprigster-new-user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
 }
