@@ -18,9 +18,9 @@ ActiveRecord::Schema[8.0].define(version: 2025_10_04_163242) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "brightness"
-    t.boolean "toxic"
-    t.integer "watering"
+    t.integer "brightness", default: 0
+    t.boolean "toxic", default: false
+    t.integer "watering", default: 0
     t.bigint "user_id"
     t.index ["user_id"], name: "index_plants_on_user_id"
   end
