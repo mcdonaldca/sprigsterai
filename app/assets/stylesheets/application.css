@@ -47,9 +47,6 @@ h1 {
   font-family: 'Petrona', serif;
   font-weight: 800;
   text-transform: lowercase;
-  text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: var(--pink);
 }
 
 a {
@@ -147,6 +144,12 @@ input[type="submit" i] {
   height: 100%;
   width: 100%;
   margin-top: -30px; /* hacky lol */
+}
+
+#sprigster-plants h1 {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--pink);
 }
 
 #sprigster-plants .plants {
