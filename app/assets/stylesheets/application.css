@@ -8,3 +8,68 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+/* Define branding colors */
+:root {
+  --green: #4D8C63;
+  --pale-green: #B8D9C0;
+  --deep-green: #0F594C;
+  --pink: #D97E96;
+  --pale-pink: #EFDBDD;
+}
+
+
+
+
+
+/* APPLICATION */
+
+/* Override default values. */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--deep-green);
+  color: #EFDBDD;
+  font: normal 400 20px "Manrope", sans-serif;
+
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+
+/* LANDING PAGE */
+
+#sprigster-landing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+}
+
+#sprigster-landing .logo {
+  display: flex;
+  justify-content: center;
+}
+
+#sprigster-landing img {
+  margin: 8px 10px 0 0;
+  height: 60px;
+  width: 60px;
+}
+
+#sprigster-landing h1 {
+  color: var(--pale-pink);
+  font: normal 400 50px "Fascinate", serif;
+  margin: 0;
+}
