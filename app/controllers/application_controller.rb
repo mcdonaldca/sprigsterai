@@ -1,8 +1,8 @@
 class ApplicationController < ActionController::Base
   # Only allow modern browsers supporting webp images, web push, badges, import maps, CSS nesting, and CSS :has.
   allow_browser versions: :modern
-  before_action :cors_preflight_check
-  after_action :cors_set_access_control_headers
+  before_action :cors_preflight_check, :cors_set_access_control_headers
+  # before_action :cors_set_access_control_headers
 
   # For all responses in this controller, return the CORS access control headers.
 

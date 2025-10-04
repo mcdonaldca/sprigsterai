@@ -44,6 +44,7 @@ body {
 }
 
 h1 {
+  font-size: 50px;
   font-family: 'Petrona', serif;
   font-weight: 800;
   text-transform: lowercase;
@@ -63,6 +64,7 @@ input[type="submit" i] {
 
   color: var(--deep-pink);
   background-color: var(--pale-pink);
+  font-size: 22px;
   font-weight: 800;
   padding: 4px 26px 8px;
   border-radius: 20px;
