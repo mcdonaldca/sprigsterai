@@ -130,6 +130,37 @@ input[type="submit" i] {
   width: 100%;
 }
 
+#sprigster-new-user h1 {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--pink);
+}
+
+#sprigster-new-user .user-field {
+  margin-bottom: 12px;
+}
+
+#sprigster-new-user label {
+  text-transform: lowercase;
+  font-size: 18px;
+  margin-left: 4px;
+}
+
+#sprigster-new-user input[type="text"] {
+  font: 14px 'Manrope';
+  border: none;
+  border-radius: 20px;
+  padding: 4px 0 4px 10px;
+}
+
+#sprigster-new-user input[type="submit"] {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  line-height: 22px;
+  margin-top: 30px;
+}
+
 
 
 

@@ -11,12 +11,10 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :username, style: "display: block" %>
-    <%= form.textarea :username %>
+  <div class="user-field">
+    <%= form.label :username, class: "label", style: "display: block" %>
+    <%= form.text_field :username %>
   </div>
 
-  <div>
-    <%= form.submit class: "button" %>
-  </div>
+  <%= form.submit "see some plants!", class: "button" %>
 <% end %>
