@@ -1,6 +1,6 @@
-# Sprigster
+# Sprigster (Hacktoberfest 2025)
 
-AI-enabled plant parenthood app -- build with Ruby on Rails & postgresql and integrated with a Gradient AI agent trained on data sets related to non-toxic and toxic plants (pet safe or not) and plant care (required sunlight, watering needs, etc.)
+AI-enabled plant parenthood app -- built with Ruby on Rails & postgresql and integrated with a Gradient AI agent trained on data sets related to non-toxic and toxic plants (pet safe or not) and plant care (required sunlight, watering needs, etc.)
 
 ![Sprigster landing page](https://adelemcdonald.com/img/sprigster-landing-page.png)
 
