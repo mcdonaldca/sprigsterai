@@ -57,8 +57,19 @@ body {
   width: 100%;
 }
 
+#sprigster-landing .logo {
+  display: flex;
+  justify-content: center;
+}
+
+#sprigster-landing img {
+  margin: 8px 10px 0 0;
+  height: 60px;
+  width: 60px;
+}
+
 #sprigster-landing h1 {
   color: var(--pale-pink);
-  font: normal 400 40px "Fascinate", serif;
+  font: normal 400 50px "Fascinate", serif;
   margin: 0;
 }
