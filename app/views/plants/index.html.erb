@@ -1,16 +1,18 @@
-<p style="color: green"><%= notice %></p>
+<div id="sprigster-plants">
+  <p style="color: green"><%= notice %></p>
 
-<% content_for :title, "Plants" %>
+  <% content_for :title, "Plants" %>
 
-<h1>Plants</h1>
+  <h1>Plants</h1>
 
-<div id="plants">
-  <% @plants.each do |plant| %>
-    <%= render plant %>
-    <p>
-      <%= link_to "Show this plant", plant %>
-    </p>
-  <% end %>
+  <div id="plants">
+    <% @plants.each do |plant| %>
+      <%= render plant %>
+      <!--p-->
+        <!--%= link_to "Show this plant", plant %-->
+      <!--/p-->
+    <% end %>
+  </div>
+
+  <!--%= link_to "New plant", new_plant_path %-->
 </div>
-
-<%= link_to "New plant", new_plant_path %>

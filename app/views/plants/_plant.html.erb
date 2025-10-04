@@ -1,19 +1,37 @@
-<div id="<%= dom_id plant %>">
-  <p>
-    <strong>Name:</strong>
-    <%= plant.name %>
-  </p>
-  <p>
-    <strong>Brightness:</strong>
-    <%= plant.brightness %>
-  </p>
-  <p>
-    <strong>Watering:</strong>
-    <%= plant.watering %>
-  </p>
-  <p>
-    <strong>Toxic:</strong>
-    <%= plant.toxic %>
-  </p>
-
+<div id="sprigster-plant">
+  <div id="<%= dom_id plant %>">
+    <h2><%= plant.name %></h2>
+    <div class="field">
+      <strong>Light level needed:</strong>
+      <% if plant.low_brightness? %>
+        Low light
+      <% elsif plant.med_low_brightness? %>
+        Indirect light
+      <% elsif plant.med_bright_brightness? %>
+        Bright indirect light
+      <% elsif plant.bright_brightness? %>
+        Bright direct light
+      <% end %>
+    </div>
+    <div class="field">
+      <strong>Watering schedule:</strong>
+      <!--%= plant.watering %-->
+      <% if plant.light_watering? %>
+        Once a week
+      <% elsif plant.med_watering? %>
+        Twice a week
+      <% elsif plant.heavy_watering? %>
+        Multiple times per week
+      <% end %>
+    </div>
+    <div class="field">
+      <strong>Pet-friendly:</strong>
+      <!--%= plant.toxic %-->
+      <% if plant.toxic? %>
+        No
+      <% else %>
+        Yes
+      <% end %>
+    </div>
+  </div>
 </div>

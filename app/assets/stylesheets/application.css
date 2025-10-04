@@ -129,3 +129,37 @@ input[type="submit" i] {
   height: 100%;
   width: 100%;
 }
+
+
+
+
+
+/* PLANTS VIEWS */
+
+#sprigster-plants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+  margin-top: -30px; /* hacky lol */
+}
+
+#sprigster-plant {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+#sprigster-plant h2 {
+  font-family: "Petrona";
+  margin: 4px 0;
+}
+
+#sprigster-plant .field {
+  padding: 0;
+  margin: 0;
+}
