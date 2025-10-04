@@ -1,36 +1,57 @@
 <div id="sprigster-plant">
-  <div id="<%= dom_id plant %>">
-    <h2><%= plant.name %></h2>
-    <div class="field">
-      <strong>Light level needed:</strong>
-      <% if plant.low_brightness? %>
-        Low light
-      <% elsif plant.med_low_brightness? %>
-        Indirect light
-      <% elsif plant.med_bright_brightness? %>
-        Bright indirect light
-      <% elsif plant.bright_brightness? %>
-        Bright direct light
-      <% end %>
-    </div>
-    <div class="field">
-      <strong>Watering schedule:</strong>
-      <!--%= plant.watering %-->
-      <% if plant.light_watering? %>
-        Once a week
-      <% elsif plant.med_watering? %>
-        Twice a week
-      <% elsif plant.heavy_watering? %>
-        Multiple times per week
-      <% end %>
-    </div>
-    <div class="field">
-      <strong>Pet-friendly:</strong>
-      <!--%= plant.toxic %-->
-      <% if plant.toxic? %>
-        No
-      <% else %>
-        Yes
-      <% end %>
+  <div id="<%= dom_id plant %>" class="plant">
+    <%= image_tag "logo.svg", :class => "plant-icon" %>
+    <div class="plant-details">
+      <h2><%= plant.name %></h2>
+      <div class="field">
+        <strong>Light level needed:</strong>
+        <% if plant.low_brightness? %>
+          <span>Low light</span>
+          <%= image_tag "bright.svg", :class => "field-icon" %>
+        <% elsif plant.med_low_brightness? %>
+          <span>Indirect light</span>
+          <%= image_tag "bright.svg", :class => "field-icon" %>
+          <%= image_tag "bright.svg", :class => "field-icon" %>
+        <% elsif plant.med_bright_brightness? %>
+          <span>Bright indirect light</span>
+          <%= image_tag "bright.svg", :class => "field-icon" %>
+          <%= image_tag "bright.svg", :class => "field-icon" %>
+          <%= image_tag "bright.svg", :class => "field-icon" %>
+        <% elsif plant.bright_brightness? %>
+          <span>Bright direct light</span>
+          <%= image_tag "bright.svg", :class => "field-icon" %>
+          <%= image_tag "bright.svg", :class => "field-icon" %>
+          <%= image_tag "bright.svg", :class => "field-icon" %>
+          <%= image_tag "bright.svg", :class => "field-icon" %>
+        <% end %>
+      </div>
+      <div class="field">
+        <strong>Watering schedule:</strong>
+        <!--%= plant.watering %-->
+        <% if plant.light_watering? %>
+          <span>Once a week</span>
+          <%= image_tag "water.svg", :class => "field-icon" %>
+        <% elsif plant.med_watering? %>
+          <span>Twice a week</span>
+          <%= image_tag "water.svg", :class => "field-icon" %>
+          <%= image_tag "water.svg", :class => "field-icon" %>
+        <% elsif plant.heavy_watering? %>
+          <span>Multiple times per week</span>
+          <%= image_tag "water.svg", :class => "field-icon" %>
+          <%= image_tag "water.svg", :class => "field-icon" %>
+          <%= image_tag "water.svg", :class => "field-icon" %>
+        <% end %>
+      </div>
+      <div class="field">
+        <strong>Pet-friendly:</strong>
+        <!--%= plant.toxic %-->
+        <% if plant.toxic? %>
+          <span>No</span>
+          <%= image_tag "toxic-no.svg", :class => "field-icon" %>
+        <% else %>
+          <span>Yes</span>
+          <%= image_tag "toxic-yes.svg", :class => "field-icon" %>
+        <% end %>
+      </div>
     </div>
   </div>
