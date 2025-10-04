@@ -2,7 +2,7 @@
 
 AI-enabled plant parenthood app -- build with Ruby on Rails & postgresql and integrated with a Gradient AI agent trained on data sets related to non-toxic and toxic plants (pet safe or not) and plant care (required sunlight, watering needs, etc.)
 
-![Sprigster landing page](https://adelemcdonald.com/img/sprigster-landing.png)
+![Sprigster landing page](https://adelemcdonald.com/img/sprigster-landing-page.png)
 
 Users would provide their specific constraints -- the brightness of their aparment (determined by window direction), level of labor desired (watering once a week? twice? three+?), and whether or not they have pets and need pet safe plants -- and then be provided options of plants that would suit their lifestyle.
 
